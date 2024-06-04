@@ -160,10 +160,8 @@
             },
             methods: {
                 add: function () {
-                    push();
-                },
-                push: function () {
                     this.list.push(this.inputValue);
+                    this.inputValue="";
                 },
                 remove: function (index) {
                     this.list.splice(index, 1);
